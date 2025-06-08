@@ -66,6 +66,6 @@ def deploy(String environment){
 def test(String environment){
     echo "Python test executuon against ${environment} environment."
     sh "docker pull betija/api-tests"
-    sh "docker run --network=host --rm betija/api-tests:latest run greetings greetings_${environment.toUpperCase()}"
+    sh "docker run --network=host --rm betija/api-tests:latest run greetings greetings_${environment}"
 
 }
