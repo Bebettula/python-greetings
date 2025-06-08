@@ -2,7 +2,7 @@ services:
   python-greetings-app-dev:
     build: .
     image: betija/python-greetings-app:latest
-    container_name: greetings-app-dev
+    container_name: python-greetings-app-dev
     ports: 
       - 7001:3000
   python-greetings-app-stg:
